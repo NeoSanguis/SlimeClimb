@@ -1,0 +1,58 @@
+Game:
+Slime Climb
+
+Link:
+
+
+Creators:
+Liam Gurney - Lead Programmer
+Gianluca Rizzo - Lead Level Designer
+Anneke Marx - Lead Artist
+
+Special Thanks:
+Sierra Van Riel for composing our soundtrack
+Our many friends that agreed to playtest and break our game
+
+Description:
+Slime Climb is a 2D platformer built around a slingshot-like movement mechanic
+which the player must use to climb through the level as fast as possible with
+a constant danger encroaching from below. With a trajectory arc and slowed time
+while aiming that can be adjusted in the difficulty settings, it is aimed at
+allowing novices to beat the game through planned jumps and slower progression,
+while allowing anyone that masters the mechanics to speedrun the game and be
+rewarded for their fast and dangerous gameplay. Included are mobile and PC versions.
+
+Implementations:
+The level design is entirely original and all level elements were built from scratch
+with inspiration from classic and modern platformers.
+All sound effects were taken from freely available online sources, and the soundtrack
+was composed by an outside member, Sierra Van Riel.
+All art assets such as sprites, animations and background images (excluding the dotted
+line sprite) are original creations.
+The trajectory arc mechanic was based on this tutorial:
+https://www.youtube.com/watch?v=p8e4Kpl9b28
+but was heavily editted to accomodate the increased intricacy of the simulated
+GameObject, the desired limitations for gameplay balance, and the 2D nature of the game.
+The MovementState used the concepts in this tutorial:
+https://www.youtube.com/watch?v=c3iEl5AwUF8
+and heavily expanded them to account for platform checks in all four directions
+and handling the detection of and interaction with different platform types.
+The main jump mechanic and all platform and level element interactions were
+created from scratch, as were the handling of power-ups, the interactions with
+Big Daddy, the slow time effect when aiming, and all other physics interactions,
+including switched use of materials based on context and manual calculations and
+overrides of velocities.
+The menus were built onto the basic concepts in this tutorial:
+https://www.youtube.com/watch?v=zc8ac_qUXQY
+The difficulty settings and their handling through PlayerPrefs, including handling how
+these affect gameplay and scoring was built from scratch.
+The timer and scoring system were built from scratch.
+Scrolling text used in the intro cutscene and end of level scoreboard was based on:
+https://www.youtube.com/watch?v=Z8efnBeXHeQ
+The very basics of 2D animation and use of tilemaps was gained from this tutorial:
+https://www.youtube.com/watch?v=aTB-5aE0POw
+"Coyote Time" was implemented from scratch but based on Celeste.
+The use of seperate up and down gravity was based on this tutorial:
+https://www.youtube.com/watch?v=lcw6nuc2uaU
+Any other features, assets, GameObjects, and implementations not explicity listed
+were built from scratch.
